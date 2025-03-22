@@ -17,12 +17,14 @@ export const metadata: Metadata = {
     'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
 }
 
-const geist = Oxygen({
+const oxygen = Oxygen({
+  weight: ['400', '700'],
   variable: '--font-oxygen',
   subsets: ['latin'],
 })
 
-const geistMono = Oxygen_Mono({
+const oxygenMono = Oxygen_Mono({
+  weight: ['400'],
   variable: '--font-oxygen-mono',
   subsets: ['latin'],
 })
@@ -35,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-blue-100/30 tracking-tight antialiased dark:bg-blue-950/10`}
+        className={`${oxygen.variable} ${oxygenMono.variable} bg-blue-100/30 tracking-tight antialiased dark:bg-blue-950/10`}
       >
         <ThemeProvider
           enableSystem={true}
