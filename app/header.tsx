@@ -1,13 +1,17 @@
 'use client'
 import { TextEffect } from '@/components/ui/text-effect'
 import Link from 'next/link'
+import { ABOUT_ME } from './data'
 
 export function Header() {
   return (
     <header className="mb-8 flex items-center justify-between">
       <div>
-        <Link href="/" className="font-medium text-black dark:text-white">
-          Julien Nim
+        <Link
+          href="/"
+          className="text-lg font-semibold text-black dark:text-white"
+        >
+          {ABOUT_ME.name}
         </Link>
         <TextEffect
           as="p"
@@ -16,7 +20,7 @@ export function Header() {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
-          Design Engineer
+          {ABOUT_ME.description}
         </TextEffect>
       </div>
     </header>

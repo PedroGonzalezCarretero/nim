@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import {  Oxygen, Oxygen_Mono } from 'next/font/google'
 import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
 }
 
-const geist = Geist({
-  variable: '--font-geist',
+const geist = Oxygen({
+  variable: '--font-oxygen',
   subsets: ['latin'],
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const geistMono = Oxygen_Mono({
+  variable: '--font-oxygen-mono',
   subsets: ['latin'],
 })
 
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
+        className={`${geist.variable} ${geistMono.variable} bg-blue-100/30 tracking-tight antialiased dark:bg-blue-950/10`}
       >
         <ThemeProvider
           enableSystem={true}

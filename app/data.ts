@@ -27,12 +27,23 @@ type SocialLink = {
   link: string
 }
 
+
+export const ABOUT_ME: {
+  name: string
+  description: string
+  image: string
+} = {
+  name: 'Pedro Gonzalez Carretero',
+  description: 'Full-stack developer',
+  image: 'https://github.com/pedrogonzalezcarr',
+}
+
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'Engineering Company Form Automation App',
     description:
       'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
+    link: '/work/engineering-form-automation',
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
     id: 'project1',
@@ -49,28 +60,20 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work1',
-  },
-  {
     company: 'Freelance',
-    title: 'Design Engineer',
+    title: 'Full-stack Developer',
     start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    end: 'Present',
+    link: '',
     id: 'work2',
   },
   {
     company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
+    title: 'Digital Communicator',
+    start: '2020',
     end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
+    link: '',
+    id: 'work1',
   },
 ]
 
@@ -116,4 +119,4 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'pedrogonzalezcarr@gmail.com'
