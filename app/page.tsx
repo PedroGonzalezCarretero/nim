@@ -1,4 +1,7 @@
 'use client'
+import CallToAction from '@/components/call-to-action'
+import ContentSection from '@/components/content-7'
+import Features from '@/components/features-3'
 import { BlogSection } from '@/components/sections/blog-section'
 import { ConnectSection } from '@/components/sections/connect-section'
 import { ExperienceSection } from '@/components/sections/experience-section'
@@ -17,7 +20,7 @@ const VARIANTS_CONTAINER = {
 }
 
 const VARIANTS_SECTION = {
-  hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
+  hidden: { opacity: 0, y: 25, filter: 'blur(8px)' },
   visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
 }
 

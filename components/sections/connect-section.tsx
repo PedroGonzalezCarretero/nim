@@ -10,10 +10,7 @@ type ConnectSectionProps = {
 
 export function ConnectSection({ transition, variants }: ConnectSectionProps) {
   return (
-    <motion.section
-      variants={variants}
-      transition={transition}
-    >
+    <motion.section variants={variants} transition={transition}>
       <h3 className="mb-5 text-lg font-medium">Connect</h3>
       <p className="mb-5 text-zinc-600 dark:text-zinc-400">
         Feel free to contact me at{' '}
@@ -23,7 +20,11 @@ export function ConnectSection({ transition, variants }: ConnectSectionProps) {
       </p>
       <div className="flex items-center justify-start space-x-3">
         {SOCIAL_LINKS.map((link) => (
-          <MagneticSocialLink key={link.label} link={link.link}>
+          <MagneticSocialLink
+            icon={link.icon}
+            key={link.label}
+            link={link.link}
+          >
             {link.label}
           </MagneticSocialLink>
         ))}

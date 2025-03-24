@@ -12,9 +12,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Nim - Personal website template',
+  title: 'Pedro González C - Portfolio',
   description:
-    'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+    'Portfolio of Pedro González C, a software engineer and web developer from Argentina.',
 }
 
 const oxygen = Oxygen({

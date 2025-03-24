@@ -1,3 +1,6 @@
+import Github from '@/components/icons/github'
+import LinkedIn from '@/components/icons/linked-in'
+
 type Project = {
   name: string
   description: string
@@ -25,8 +28,8 @@ type BlogPost = {
 type SocialLink = {
   label: string
   link: string
+  icon: React.ComponentType
 }
-
 
 export const ABOUT_ME: {
   name: string
@@ -103,19 +106,14 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/PedroGonzalezCarretero',
+    icon: Github,
   },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
-  },
+
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.linkedin.com/in/pedro-gonzalez-carretero/',
+    icon: LinkedIn,
   },
 ]
 
